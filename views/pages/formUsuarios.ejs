@@ -1,0 +1,177 @@
+<%- include('../partials/header'); %>
+    <main class="container py-5">
+
+
+        <form action="/usuarios/cadastrarUsuarios" method="POST" name="formulario" class="needs-validation mt-5 bg-light shadow-lg p-5 rounded" novalidate>
+            <h1 class="text-center pb-4">Cadastro</h1>
+
+            <!-- nome e cpf-->
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label class="sr-only" for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="nome completo" minlength="3" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label class="sr-only" for="cpf">CPF</label>
+                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="cpf (somente números)" minlength="11" maxlength="11" required onblur="validarCPF()">
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+            </div>
+
+            <!-- email e telefone-->
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label class="sr-only" for="email">e-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="e-mail" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label class="sr-only" for="telefone">telefone</label>
+                    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="telefone com ddd (somente números)" minlength="10" onkeypress="$(this).mask('(00) 000000009')" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+            </div>
+
+            <!-- usuario e senha-->
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label class="sr-only" for="nomeU">Usuário</label>
+                    <input type="text" class="form-control" id="nomeU" name="nomeU" minlength="4" placeholder="nome de usuário (mínimo 4 caracteres)" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label class="sr-only" for="senha">Senha</label>
+                    <input type="text" class="form-control" id="senha" name="senha" placeholder="senha (6 caracteres)" minlength="6" maxlength="6" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+            </div>
+
+            <!-- mensagem e cor-->
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <label for="mensagem">Mensagem</label>
+                    <input type="text" class="form-control" id="mensagem" name="mensagem" maxlength="4" placeholder="mensagem com no máximo 4 carateres" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <label for="cor">Cor</label>
+                    <input type="color" class="form-control" id="cor" name="cor" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+            </div>
+
+            <!-- termos e condições -->
+            <div>
+                <a href="#" class="pr-5" data-toggle="modal" data-target="#textoTermos">
+                    Termos e Condições
+                </a>
+                <div class="modal fade" id="textoTermos" tabindex="-1" role="dialog"
+                    aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalLongoExemplo">Termos e Condições</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>É necessário preencher todos os campos para cadastro e aceitar os termos aqui
+                                        descritos.</li>
+                                    <li>Apenas seu nome de usuário será exibido para todo o público.</li>
+                                    <li>Você só poderá postar mensagens com no máximo 4 caracteres.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugit expedita
+                                        dolorum ipsam! </li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, possimus?</li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit numquam
+                                        perferendis odio ratione obcaecati natus esse rerum pariatur exercitationem
+                                        iste.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input class="form-check-input" type="checkbox" name="tec" id="tec">
+                <label class="form-check-label" for="tec">Aceito</label>
+
+            </div>
+
+            <div class="text-center">
+                <button type="submit" id="botaoAceito" class="btn btn-dark btn-lg px-5 m-5" disabled>Enviar</button>
+
+                <a href="/usuarios" class="btn btn-lg btn-danger px-5 m-5">Cancelar</a>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script>
+        //validação dos inputs no bootstrap
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+
+                var forms = document.getElementsByClassName('needs-validation');
+
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+
+        // validação cpf
+        function validarCPF() {
+            let digitado = document.forms.formulario.cpf.value;
+            let cpfValido = /^(([0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}))$/;
+
+            if (cpfValido.test(digitado) == false) {
+                digitado = digitado.replace(/\D/g, "");
+
+                if (digitado.length == 11) {
+                    digitado = digitado.replace(/(\d{3})(\d)/, "$1.$2");
+                    digitado = digitado.replace(/(\d{3})(\d)/, "$1.$2");
+                    digitado = digitado.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+
+                    document.getElementById("cpf").value = digitado;
+
+                } else {
+                    alert("CPF inválido, digite novamente");
+                    document.forms.formulario.cpf.value = "";
+                }
+            }
+        }
+    </script>
+
+<%- include('../partials/footer'); %>
