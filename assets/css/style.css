@@ -3,9 +3,12 @@
     margin: 0 !important;
 } */
 
-/* body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
     background: grey !important;
-} */
+    font-family: 'Nunito', sans-serif;
+}
 
 .no-padding {
     padding-left: 0;
@@ -99,12 +102,23 @@
     font-weight: bold;
 }
 
-.copyright{
-    background: white;
-}
-
 header{
     background-image: url('/img/1.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.p_white{
+    color: white;
+    font-size: 2.5vh;
+}
+
+.copyright{
+    color: white;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #e41b40;
+    font-size: 2.5vh;
 }
