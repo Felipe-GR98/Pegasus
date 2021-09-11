@@ -29,7 +29,7 @@ app.listen(process.env.PORT || port, () =>{
 (se tiver mudado os arquivos)
 git add .
 git commit -am "commit novo heroku"
-git push heroku master
+git push heroku main
 
 Se tudo correu bem, a aplicação ficou devidamente hospedada e disponível online.
 (esperar um pouco que as vezes demora)
@@ -37,4 +37,4 @@ Se tudo correu bem, a aplicação ficou devidamente hospedada e disponível onli
 (quando mudar arquivos refazer, as vezes demora pra atualizar)
 git add .
 git commit -am "commit novo heroku"
-git push heroku master
+git push heroku main
