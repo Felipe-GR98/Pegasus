@@ -8,7 +8,9 @@ heroku git: remote -a NOME DO APP
 
 git add .
 git commit -am "commit heroku"
-git push heroku master
+git push heroku master (ou main)
+
+demora um pouquinho. aparece mensagem no final "verifying deploy... done. To (site) ..."
 
 criar um arquivo com nome ‘Procfile’ na raiz do projeto e editar como:
 // app.js-> nome da aplicação principal
