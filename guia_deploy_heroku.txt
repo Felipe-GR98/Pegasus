@@ -33,3 +33,8 @@ git push heroku master
 
 Se tudo correu bem, a aplicação ficou devidamente hospedada e disponível online.
 (esperar um pouco que as vezes demora)
+
+(quando mudar arquivos refazer, as vezes demora pra atualizar)
+git add .
+git commit -am "commit novo heroku"
+git push heroku master

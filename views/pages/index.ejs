@@ -1,244 +1,378 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <link rel="sortcut icon" href="https://d8vlg9z1oftyc.cloudfront.net/artye/image/product/17657b07f205d9cf98ec23e76db2763320190311201634/450/letra-g-azul-claro-5cm_5172.png" type="image/gif" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
-    <title>Pegasus</title>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        
+        /* * {
+    padding: 0 !important;
+    margin: 0 !important;
+} */
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
         body {
-            text-align: center
+            background: grey !important;
+            font-family: 'Nunito', sans-serif;
         }
-        
-        #header {
-            padding: 30px;
+
+        .no-padding {
+            padding-left: 0;
+            padding-right: 0;
         }
-        
-        #header.large {
-            padding: 30px;
-            transition: 1s;
+
+        .toneladas_e_jovens {
+            background: rgb(211, 211, 211);
+            text-align: center;
+            padding: 4vh !important;
         }
-        
-        #header.small {
-            padding: 0px;
-            transition: 1s;
+
+        /* .header {
+    background: grey !important;
+} */
+
+        .header a {
+            color: white;
         }
-        
-        .navbar-brand {
-            font-family: 'Russo One', sans-serif;
-            font-size: 2.25rem;
+
+        .nav-link:hover {
+            background: white;
+            border-radius: 10vh;
             color: red;
         }
-        
-        .navbar-nav {
-            font-variant: small-caps;
-            font-size: 1.75rem;
+
+        .sel {
+            background: white;
+            border-radius: 10vh;
+            color: red !important;
         }
-        
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            position: relative;
+
+        .sel:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .nav-link:hover {
+                background: none !important;
+                color: red;
+            }
+
+            .sel {
+                background: white;
+                padding: 2vh !important;
+                border-radius: 10vh;
+                color: red !important;
+            }
+
+            .menu_footer a:hover {
+                background: none !important;
+                color: red;
+                padding: 1vh;
+            }
+        }
+
+        .redes_sociais {
+            font-size: 7vh;
+        }
+
+        .menu_footer a {
+            text-decoration: none !important;
+            color: #ffff;
+            padding: 1vh;
+        }
+
+        .menu_footer a:hover {
+            background: white;
+            border-radius: 10vh;
+            color: red;
+            padding: 1vh;
+        }
+
+        .menu_footer {
+            font-size: 2.5vh !important;
+        }
+
+        .botao_manual {
+            background: #e41b40;
+            border: none;
+            padding: 2vh;
+            border-radius: 5vh;
+        }
+
+        .botao_manual:hover {
             opacity: 0.7;
-            background-attachment: fixed;
-            background-position: center;
+            color: white;
+        }
+
+        .estilo_contador {
+            font-size: 5vw;
+            letter-spacing: 1vw;
+            font-weight: bold;
+        }
+
+        header {
+            background-image: url('/img/1.png');
             background-repeat: no-repeat;
             background-size: cover;
         }
-        
-        /* deixei as 3 imagens se precisar colocar imagens diferentes */
-        .bgimg-1 { 
-            background-image: url("https://img.elo7.com.br/product/zoom/29C1895/tecido-degrade-conjunto-unicornio-45-x-90-cm-un02-tema-de-festa-infantil.jpg");
-            min-height: 800px;
+
+        .p_white {
+            color: white;
+            font-size: 2.5vh;
         }
-        
-        .bgimg-2 {
-            background-image: url("https://img.elo7.com.br/product/zoom/29C1895/tecido-degrade-conjunto-unicornio-45-x-90-cm-un02-tema-de-festa-infantil.jpg");
-            min-height: 800px;
+
+        .copyright {
+            color: white;
         }
-        
-        .bgimg-3 {
-            background-image: url("https://img.elo7.com.br/product/zoom/29C1895/tecido-degrade-conjunto-unicornio-45-x-90-cm-un02-tema-de-festa-infantil.jpg");
-            min-height: 800px;
-        }
-        
-        .caption {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            color: #000;
-        }
-        
-        .caption span.border {
-            color: #fff;
-            text-shadow: 2px 2px 15px black;
-            padding: 18px;
-            letter-spacing: 10px;
-            font-size: 25px;
-            background-color: rgba(80, 80, 80, 0.781);
-        }
-        
-        h1 {
-            font-variant: small-caps;
-        }
-        /* barra de rolagem */
-        
-         ::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
-        }
-        /* fundo da barra*/
-        
-         ::-webkit-scrollbar-track {
-            background: rgb(255, 255, 255);
-        }
-        /* alça da barra*/
-        
-         ::-webkit-scrollbar-thumb {
-            background: #b8b8b8;
-            border-radius: 5px;
+
+        .copyright a {
+            text-decoration: none;
+            color: #e41b40;
+            font-size: 2.5vh;
         }
     </style>
 </head>
 
 <body>
-
-    <div class=" bgimg-1" id="topo">
-        <div class="caption"></div>
-    </div>
-
-    <div id="header" class="shadow-lg sticky-top">
-
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="/" id="nome" style="color: red;">Logo</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse text-right" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link px-5" href="/usuarios/cadastrarUsuarios">Cadastrar</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <div class="bgimg-2">
-        <div class="caption">
-            <a class="text-decoration-none" href="" data-toggle="modal" data-target="#insp">
-                <span class="border px-5">Lorem ipsum</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="modal fade" id="insp" tabindex="-1" role="dialog" aria-labelledby="Titulo" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="TituloModalLongoExemplo">Inspiração</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                        <span aria-hidden="true">&times;</span>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md justify-content-md-center justify-content-start header">
+                    <a class="navbar-brand d-md-none d-inline" href="">Logo</a>
+                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="">Logo</a>
+                    <div class="collapse navbar-collapse justify-content-between align-items-center w-100"
+                        id="navbarNavAltMarkup">
+                        <ul class="navbar-nav mx-auto text-md-center text-left">
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Regulamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Prêmios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Ranking</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+                            <li class="nav-item"><a class="nav-link mr-2" href="">Entrar</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link sel" href="">Cadastre-se</a> </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <span class="iconify" data-icon="eva:menu-fill" style="color: white;"></span>
+                        </span>
                     </button>
-                </div>
-                <div class="modal-body">
-                    <p>teste</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </nav>
+                <!-- <nav class="navbar navbar-expand-lg header">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse header" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto menu_itens">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Como Participar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Prêmios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Regulamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dúvidas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ranking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cadastre-se</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Entrar</a>
+                            </li> -->
+                <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li> -->
+                <!-- </ul> -->
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+                <!-- </div>
+                </nav> -->
+            </div>
+            <div class="col-md-12">
+                <div style="background: transparent; height: 70vh;"
+                    class="d-flex justify-content-center align-items-start flex-column">
+                    <h1>Em que planeta</h1>
+                    <h1>você quer viver?</h1>
+                    <button class="botao_manual">Cadastre-se</button>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div style="position:relative;">
-        <div style="color:#ddd; background-color:red; text-align:center; padding:50px 80px; text-align:center; font-size:30px;">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa et rerum labore cum beatae tempora unde harum facilis architecto, suscipit quaerat magni corrupti sit nemo veniam eveniet consequuntur sapiente dolorem.</p>
-        </div>
-    </div>
+    <main class="container-fluid">
 
-    <div class="bgimg-3">
-        <div class="caption">
-            <a class="text-decoration-none" href="/usuarios/cadastrarUsuarios"><span
-                    class="border px-5">CADASTRAR</span></a>
-        </div>
-    </div>
-
-    <footer class="p-3 bg-light d-flex justify-content-around">
-        <div id="esquerda">
-            <div class="list-group list-group-flush text-left">
-                <h4 class="list-group-item">Mapa do Site</h4>
-                <a href="/usuarios/cadastrarUsuarios" class="list-group-item">Cadastrar</a>
-                <a href="#topo" class="list-group-item">Voltar ao topo</a>
+        <div class="row">
+            <div class="col-md-12">
+                <div style="background: #e41b40; height: 40vh;"></div>
             </div>
         </div>
 
-        <div id="centro">
-            <a id="nome" class="navbar-brand p-3" href="/">
-                Logo
-            </a>
-            <p class="small pt-5">Desenvolvido por Pegasus Squad, 2021</p>
-
+        <div class="row">
+            <div class="col-md-6">
+                <div class="toneladas_e_jovens">
+                    <span class="iconify" data-icon="mdi:recycle" style="color: #e41b40; font-size: 20vh;"></span>
+                    <br>
+                    <span class="counter estilo_contador" data-count="40">0</span>
+                    <h3>Toneladas Arrecadadas</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="toneladas_e_jovens">
+                    <span class="iconify" data-icon="akar-icons:people-group"
+                        style="color: #e41b40; font-size: 20vh;"></span>
+                    <br>
+                    <span class="counter estilo_contador" data-count="540">0</span>
+                    <h3>Jovens Impactados</h3>
+                </div>
+            </div>
         </div>
 
-        <div id="direita">
-            <div class="list-group list-group-flush">
-                <a class="list-group-item" href="/usuarios/termos">Termos e Condições</a>
-                <a class="list-group-item" href="/usuarios/politica">Política de Privacidade</a>
-                <a class="list-group-item" href="https://api.whatsapp.com/send?phone=5531995926916&text=Oi%2C%20tenho%20d%C3%BAvidas%20sobre%20a%20maravilhosa%20rede%20social%20Gugu%2C%20voc%C3%AA%20pode%20me%20ajudar%3F">Contato</a>
-                <button class="list-group-item" onclick="validarAdm()">Administração</button>
+        <div class="row">
+            <div class="col-md-4">
+                <div style="background: #e41b40; height: 40vh;border-radius: 50%;"></div>
+            </div>
+            <div class="col-md-4">
+                <div style="background: #e41b40; height: 40vh;border-radius: 50%;"></div>
+            </div>
+            <div class="col-md-4">
+                <div style="background: #e41b40; height: 40vh;border-radius: 50%;"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div style="background: #e41b40; height: 40vh;"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 redes_sociais d-flex justify-content-center">
+                <span class="iconify mr-2" data-icon="akar-icons:facebook-fill" style="color: #e41b40;"></span>
+                <span class="iconify mr-2" data-icon="entypo-social:twitter-with-circle" style="color: #e41b40;"></span>
+                <span class="iconify mr-2" data-icon="entypo-social:instagram-with-circle"
+                    style="color: #e41b40;"></span>
+                <span class="iconify mr-2" data-icon="entypo-social:youtube-with-circle" style="color: #e41b40;"></span>
+                <span class="iconify mr-2" data-icon="entypo-social:linkedin-with-circle"
+                    style="color: #e41b40;"></span>
+                <span class="iconify" data-icon="akar-icons:github-fill" style="color: #e41b40;"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 menu_footer d-flex justify-content-center pt-2 pb-2">
+                <a href="">Home</a>
+                <a href="">Sobre Nós</a>
+                <a href="">Regulamento</a>
+                <a href="">Prêmios</a>
+                <a href="">Ranking</a>
+                <a href="">Login</a>
+                <a href="">Cadastro</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="p_white">Mais da nossa marca:</p>
+                <div class="d-flex justify-content-center pb-1">
+                    <span class="iconify mr-3" data-icon="bi:card-image" style="color: #e41b40; font-size: 5vh;"></span>
+                    <span class="iconify mr-3" data-icon="bi:card-image" style="color: #e41b40; font-size: 5vh;"></span>
+                    <span class="iconify mr-3" data-icon="bi:card-image" style="color: #e41b40; font-size: 5vh;"></span>
+                    <span class="iconify mr-3" data-icon="bi:card-image" style="color: #e41b40; font-size: 5vh;"></span>
+                    <span class="iconify mr-3" data-icon="bi:card-image" style="color: #e41b40; font-size: 5vh;"></span>
+                    <span class="iconify mr-3" data-icon="bi:card-image" style="color: #e41b40; font-size: 5vh;"></span>
+                    <span class="iconify mr-3" data-icon="bi:card-image" style="color: #e41b40; font-size: 5vh;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center copyright pb-0 mb-0">
+                <p>&copy; 2021 <a href=""><b>Pegasus Squad</a></b></p>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- jQuery, Popper.js e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-
+    <!-- JS da página -->
     <script>
-        //senha para abrir a pagina de administrador
-        function validarAdm() {
-            var passwordAdm = "123";
-            var nAdm = prompt("Digite a senha de administração do site");
+        $(document).ready(function () {
 
-            console.log(passwordAdm)
-            console.log(nAdm)
+            $('.counter').each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
 
-            if (passwordAdm === nAdm) {
-                window.location.href = "/usuarios/usuariosTabela"
-            } else {
-                alert("Senha incorreta")
-            }
-        }
+                $({ countNum: $this.text() }).animate({
+                    countNum: countTo
+                },
 
-        //função para diminuir menu quando abaixa a pagina
-        $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 800) {
-                $("#header").removeClass("large").addClass("small");
-            } else {
-                $("#header").removeClass("small").addClass("large");
-            }
+                    {
+
+                        duration: 4000,
+                        easing: 'linear',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                        }
+                    });
+            });
+
         });
     </script>
 </body>
