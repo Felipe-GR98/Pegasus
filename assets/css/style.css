@@ -1,0 +1,69 @@
+/* * {
+    padding: 0 !important;
+    margin: 0 !important;
+} */
+
+body{
+    background: grey !important;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.toneladas_e_jovens {
+    background: cornflowerblue;
+    text-align: center;
+    margin: 1vh !important;
+}
+
+.header {
+    background: grey !important;
+}
+
+.header a {
+    color: white;
+}
+
+.nav-link:hover {
+    background: white;
+    border-radius: 10vh;
+    color: red;
+}
+
+.sel {
+    background: white;
+    border-radius: 10vh;
+    color: red !important;
+}
+
+.sel:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .nav-link:hover {
+        background: none !important;
+        color: red;
+    }
+    .sel {
+        background: white;
+        padding: 2vh !important;
+        border-radius: 10vh;
+        color: red !important;
+    }
+}
+
+.redes_sociais{
+    font-size: 7vh;
+}
+
+.menu_footer a{
+    text-decoration: none !important;
+    color: #ffff;
+}
+
+.menu_footer{
+    font-size: 2.5vh !important;
+}
