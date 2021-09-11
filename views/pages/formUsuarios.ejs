@@ -59,31 +59,12 @@
                 </div>
             </div>
 
-            <!-- mensagem e cor-->
-            <div class="form-group row">
-                <div class="col-sm-10">
-                    <label for="mensagem">Mensagem</label>
-                    <input type="text" class="form-control" id="mensagem" name="mensagem" maxlength="4" placeholder="mensagem com no máximo 4 carateres" required>
-                    <div class="invalid-feedback">
-                        Preenchimento obrigatório.
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <label for="cor">Cor</label>
-                    <input type="color" class="form-control" id="cor" name="cor" required>
-                    <div class="invalid-feedback">
-                        Preenchimento obrigatório.
-                    </div>
-                </div>
-            </div>
-
             <!-- termos e condições -->
             <div>
                 <a href="#" class="pr-5" data-toggle="modal" data-target="#textoTermos">
                     Termos e Condições
                 </a>
-                <div class="modal fade" id="textoTermos" tabindex="-1" role="dialog"
-                    aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                <div class="modal fade" id="textoTermos" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -94,16 +75,14 @@
                             </div>
                             <div class="modal-body">
                                 <ul>
-                                    <li>É necessário preencher todos os campos para cadastro e aceitar os termos aqui
-                                        descritos.</li>
+                                    <li>É necessário preencher todos os campos para cadastro e aceitar os termos aqui descritos.
+                                    </li>
                                     <li>Apenas seu nome de usuário será exibido para todo o público.</li>
                                     <li>Você só poderá postar mensagens com no máximo 4 caracteres.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugit expedita
-                                        dolorum ipsam! </li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugit expedita dolorum ipsam! </li>
                                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, possimus?</li>
-                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit numquam
-                                        perferendis odio ratione obcaecati natus esse rerum pariatur exercitationem
-                                        iste.</li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit numquam perferendis odio ratione obcaecati natus esse rerum pariatur exercitationem iste.
+                                    </li>
                                     <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
 
                                 </ul>
@@ -132,14 +111,14 @@
 
     <script>
         //validação dos inputs no bootstrap
-        (function () {
+        (function() {
             'use strict';
-            window.addEventListener('load', function () {
+            window.addEventListener('load', function() {
 
                 var forms = document.getElementsByClassName('needs-validation');
 
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
                         if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();
@@ -174,4 +153,4 @@
         }
     </script>
 
-<%- include('../partials/footer'); %>
+    <%- include('../partials/footer'); %>

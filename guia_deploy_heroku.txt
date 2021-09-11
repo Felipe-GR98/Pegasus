@@ -1,5 +1,7 @@
 criar um novo app no heroku
 
+instalar a CLI do Heroku (fica na primeira pagina do aplicativo)
+
 heroku login
 
 vai mandar pro site do heroku, ai clica em login e coloca o usuario e senha (se ja tiver logado so clica em login que vai. pode fechar a janela depois)
