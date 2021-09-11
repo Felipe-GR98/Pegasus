@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+#svg-map path { fill:#0094d9 }
+#svg-map text { fill:#fff; font:12px Arial-BoldMT, sans-serif; cursor:pointer }
+#svg-map a{ text-decoration:none }
+#svg-map a:hover { cursor:pointer; text-decoration:none }
+#svg-map a:hover path{ fill:#003399 !important }
+#svg-map .circle { fill:#66ccff }
+#svg-map a:hover .circle { fill:#003399 !important; cursor:pointer }
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+#text {
+    border: 0.5px solid;
+    border-radius: 5px;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    color: black;
+    /* text-shadow: 1px 1px 1px #FFFFFF; */
+    padding:20px ;
+    box-shadow: rgb(206, 206, 206) 5px, 4px;
+}
