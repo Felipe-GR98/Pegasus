@@ -1,0 +1,31 @@
+criar um novo app no heroku
+
+heroku login
+
+vai mandar pro site do heroku, ai clica em login e coloca o usuario e senha (se ja tiver logado so clica em login que vai. pode fechar a janela depois)
+
+heroku git: remote -a NOME DO APP
+
+git add .
+git commit -am "commit heroku"
+git push heroku master
+
+criar um arquivo com nome ‘Procfile’ na raiz do projeto e editar como:
+// app.js-> nome da aplicação principal
+web: node app.js
+
+Garantir que o servidor está na porta 5000.
+Em ‘app.js’ editar arquvio como:
+// 'process.env.port': porta do Heroku
+let port = 5000;
+app.listen(process.env.PORT || port, () =>{
+   console.log('Servidor em execução na porta: '+ port);
+});
+
+(se tiver mudado os arquivos)
+git add .
+git commit -am "commit novo heroku"
+git push heroku master
+
+Se tudo correu bem, a aplicação ficou devidamente hospedada e disponível online.
+(esperar um pouco que as vezes demora)
