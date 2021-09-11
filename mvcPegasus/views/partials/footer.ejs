@@ -1,0 +1,99 @@
+<footer class="p-3 bg-light d-flex justify-content-around">
+    <div id="esquerda ">
+        <div class="list-group list-group-flush text-left">
+            <h4 class="list-group-item">Mapa do Site</h4>
+            <a href="/usuarios/cadastrarUsuarios" class="list-group-item">Cadastrar</a>
+            <a href="/usuarios" class="list-group-item">Ver Atualizações</a>
+            <a href="#topo" class="list-group-item">Voltar ao topo</a>
+        </div>
+    </div>
+
+    <div id="centro ">
+        <a id="nome" class="navbar-brand p-3" href="/">
+            Logo rodapé
+        </a>
+        <p class="small pt-5">Desenvolvido por Luiza Gontijo, 2021</p>
+
+    </div>
+
+    <div id="direita">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="/usuarios/termos">Termos e Condições</a>
+            <a class="list-group-item" href="/usuarios/politica">Política de Privacidade</a>
+            <a class="list-group-item" href="https://api.whatsapp.com/send?phone=5531995926916&text=Oi%2C%20tenho%20d%C3%BAvidas%20sobre%20a%20maravilhosa%20rede%20social%20Gugu%2C%20voc%C3%AA%20pode%20me%20ajudar%3F">Contato</a>
+            <button class="list-group-item" onclick="validarAdm()">Administração</button>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+<script>
+    function validarAdm() {
+        var passwordAdm = "123";
+        var nAdm = prompt("Digite a senha de administração do site");
+
+        console.log(passwordAdm)
+        console.log(nAdm)
+
+        if (passwordAdm === nAdm) {
+            window.location.href = "/usuarios/usuariosTabela"
+        } else {
+            alert("Senha incorreta")
+        }
+    }
+
+    //função para habilitar botão de cadastro
+    $(document).ready(function() {
+        $('#tec').change(function() {
+            var aceito = ($(this).val());
+            console.log(aceito)
+
+            if (aceito != "on") {
+                $('#botaoAceito').prop("disabled", true);
+            } else {
+                $('#botaoAceito').prop("disabled", false);
+            }
+        });
+    });
+</script>
+
+<script>
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+
+
+<script>
+    //validação dos inputs no bootstrap
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+
+            var forms = document.getElementsByClassName('needs-validation');
+
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+</body>
+
+</html>

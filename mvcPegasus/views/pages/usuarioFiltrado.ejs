@@ -1,0 +1,57 @@
+<%- include('../partials/header'); %>
+
+    <div class="container py-5">
+        <h1 class="text-center pb-5">Usuário</h1>
+
+        <div id="cardFiltrado" class="card-columns d-flex justify-content-center">
+
+            <div class="card text-center shadow " style="background-color: <%= usu.cor %>;">
+                <img class="card-img-top px-4"
+                    src="https://lh3.googleusercontent.com/35oKpyDv4qyOWgOpsREfx0HRnTdspS-7_TsieN2xRKBS9qfg-SiMKARafNHxyKcE82v1uXZlMmJ0QJg5gvZTSF3LHCCcKw-pBtK8EneBqsC9xK_4N4XUkcUnYLcZXJTPGmcn5ugJ-i8YEFzJ653ksuTngId91CkwBiFHrKHzOv5Rf1WFYFV4VTEocvYmNnKp6BRgA_hn-SktUhfgtBsbDNz4ZvBqVurShJ2Fb2TP72yZ1J3jmOZ2ul4VR-ka1qNO53uK9CPbkcPMb3orjlqUjSY66vNrCx5xgY4TkayMuIBPsxGWgDsvkkcmlB4exitu_RHVMlg5s-ToC5HrR_fPkWsvLjAko2K-6ZS5KyIxMGRjB4U1wGInxgcl1I3OuaoXcqp152N3CHM6HFAfOn4MExmsnlR8_jsPD1g5EGYulnGpdbRx5GareWIdHfF5LaNaAepkGuysvIAUWvGlq_lntFIqNS2rYDcgC_x4sZRN0bZ5wQP16RwFRS06jYhDl6A06SfMokeiIt5lug9B16lV1oqJrUDMPvtyPDewBLyl3-ivy0BJ7cNKC36LhiTp3bav0uvP2MbiQQA1OvwqIcJQCp_DEL83qs8Zu73mFFFxxJUf4EpoG7q-748GnajuCEn7shL-FRY-AvFpwH_eikrtYFSA7LFCXL6IX48Z2E611IlYcAxlZi2mDegL28U-eeiuQ_fs4rKbHJWft270wSmgP9A7=s500-no?authuser=0"
+                    alt="Card image">
+                <div class=" card-img-overlay px-0">
+
+                    <div id="msgFiltrado" class="mensagem px-0 ">
+                        <%= usu.mensagem %>
+                    </div>
+                    <div id="userFiltrado" class="user pb-5 pl-3 text-truncate text-left">
+                        <%= usu.nomeU %>
+                    </div>
+
+                    <input type="hidden" name="id" value="<%= usu._id %>" />
+                    <input type="hidden" name="nome" value="<%= usu.nome %>" />
+                    <input type="hidden" name="cpf" value="<%= usu.cpf %>" />
+                    <input type="hidden" name="email" value="<%= usu.email %>" />
+                    <input type="hidden" name="telefone" value="<%= usu.telefone %>" />
+                    <input type="hidden" name="senha" id="senha" value="<%= usu.senha %>" />
+                </div>
+            </div>
+        </div>
+
+        <div class="pb-5">
+            <button id="btnFiltrado" class="btn btn-dark btn-lg mt-sm-5" type="button" onclick="validarSenha()">EDITAR</button>
+            <br>
+            <a href="/usuarios" class="btn btn-info btn-lg my-3 text-center">Voltar para a Timeline</a>
+        </div>
+
+    </div>
+
+
+    <script>
+        //função para validar senha do usuario
+        function validarSenha() {
+            var password = document.getElementById('senha').value;
+            var n = prompt("Digite a senha");
+
+            console.log(password)
+            console.log(n)
+
+            if (password == n) {
+                window.location.href = "/usuarios/editarUsuarios/<%= usu._id %>"
+            } else {
+                alert("Senha incorreta")
+            }
+        }
+    </script>
+
+<%- include('../partials/footer'); %>
