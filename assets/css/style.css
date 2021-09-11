@@ -3,9 +3,9 @@
     margin: 0 !important;
 } */
 
-body {
+/* body {
     background: grey !important;
-}
+} */
 
 .no-padding {
     padding-left: 0;
@@ -18,9 +18,9 @@ body {
     padding: 4vh !important;
 }
 
-.header {
+/* .header {
     background: grey !important;
-}
+} */
 
 .header a {
     color: white;
@@ -53,6 +53,11 @@ body {
         border-radius: 10vh;
         color: red !important;
     }
+    .menu_footer a:hover {
+        background: none !important;
+        color: red;
+        padding: 1vh;
+    }
 }
 
 .redes_sociais {
@@ -62,6 +67,14 @@ body {
 .menu_footer a {
     text-decoration: none !important;
     color: #ffff;
+    padding: 1vh;
+}
+
+.menu_footer a:hover {
+    background: white;
+    border-radius: 10vh;
+    color: red;
+    padding: 1vh;
 }
 
 .menu_footer {
@@ -88,4 +101,10 @@ body {
 
 .copyright{
     background: white;
+}
+
+header{
+    background-image: url('/img/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
