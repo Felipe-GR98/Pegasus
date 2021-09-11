@@ -3,7 +3,7 @@
     margin: 0 !important;
 } */
 
-body{
+body {
     background: grey !important;
 }
 
@@ -13,9 +13,9 @@ body{
 }
 
 .toneladas_e_jovens {
-    background: cornflowerblue;
+    background:rgb(211, 211, 211);
     text-align: center;
-    margin: 1vh !important;
+    padding: 4vh !important;
 }
 
 .header {
@@ -55,15 +55,37 @@ body{
     }
 }
 
-.redes_sociais{
+.redes_sociais {
     font-size: 7vh;
 }
 
-.menu_footer a{
+.menu_footer a {
     text-decoration: none !important;
     color: #ffff;
 }
 
-.menu_footer{
+.menu_footer {
     font-size: 2.5vh !important;
+}
+
+.botao_manual {
+    background: #e41b40;
+    border: none;
+    padding: 2vh;
+    border-radius: 5vh;
+}
+
+.botao_manual:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.estilo_contador{
+    font-size: 5vw;
+    letter-spacing: 1vw;
+    font-weight: bold;
+}
+
+.copyright{
+    background: white;
 }
