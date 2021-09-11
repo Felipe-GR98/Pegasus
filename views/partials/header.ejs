@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
-    <link rel="sortcut icon" href="https://d8vlg9z1oftyc.cloudfront.net/artye/image/product/17657b07f205d9cf98ec23e76db2763320190311201634/450/letra-g-azul-claro-5cm_5172.png" type="image/gif" />
+    <link rel="sortcut icon"
+        href="https://d8vlg9z1oftyc.cloudfront.net/artye/image/product/17657b07f205d9cf98ec23e76db2763320190311201634/450/letra-g-azul-claro-5cm_5172.png"
+        type="image/gif" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
@@ -14,161 +18,236 @@
     <title>Pegasus</title>
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        
+        /* * {
+    padding: 0 !important;
+    margin: 0 !important;
+} */
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
         body {
-            background-image: url(https://img.elo7.com.br/product/zoom/29C1895/tecido-degrade-conjunto-unicornio-45-x-90-cm-un02-tema-de-festa-infantil.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            text-align: center
+            background: grey !important;
+            font-family: 'Nunito', sans-serif;
         }
-        
-        .navbar-brand {
-            font-family: 'Russo One', sans-serif;
-            font-size: 2.25rem;
+
+        .no-padding {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .toneladas_e_jovens {
+            background: rgb(211, 211, 211);
+            text-align: center;
+            padding: 4vh !important;
+        }
+
+        /* .header {
+    background: grey !important;
+} */
+
+        .header a {
+            color: white;
+        }
+
+        .nav-link:hover {
+            background: white;
+            border-radius: 10vh;
             color: red;
         }
-        
-        .navbar-nav {
-            font-variant: small-caps;
-            font-size: 1.75rem;
+
+        .sel {
+            background: white;
+            border-radius: 10vh;
+            color: red !important;
         }
-        
-        h1 {
-            font-variant: small-caps;
+
+        .sel:hover {
+            opacity: 0.8;
         }
-        
-         ::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
+
+        @media (max-width: 768px) {
+            .nav-link:hover {
+                background: none !important;
+                color: red;
+            }
+
+            .sel {
+                background: white;
+                padding: 2vh !important;
+                border-radius: 10vh;
+                color: red !important;
+            }
+
+            .menu_footer a:hover {
+                background: none !important;
+                color: red;
+                padding: 1vh;
+            }
         }
-        /* fundo da barra*/
-        
-         ::-webkit-scrollbar-track {
-            background: rgb(255, 255, 255);
+
+        .redes_sociais {
+            font-size: 7vh;
         }
-        /* aqui é a alça da barra*/
-        
-         ::-webkit-scrollbar-thumb {
-            background: #b8b8b8;
-            border-radius: 5px;
+
+        .menu_footer a {
+            text-decoration: none !important;
+            color: #ffff;
+            padding: 1vh;
         }
-        
-        .user {
+
+        .menu_footer a:hover {
+            background: white;
+            border-radius: 10vh;
+            color: red;
+            padding: 1vh;
+        }
+
+        .menu_footer {
+            font-size: 2.5vh !important;
+        }
+
+        .botao_manual {
+            background: #e41b40;
+            border: none;
+            padding: 2vh;
+            border-radius: 5vh;
+        }
+
+        .botao_manual:hover {
+            opacity: 0.7;
             color: white;
-            text-shadow: 2px 2px 5px black;
         }
-        
-        #cardFiltrado {
-            width: 300px;
-            margin: 0 auto;
-        }
-        
-        #msgFiltrado {
-            font-size: 50px;
+
+        .estilo_contador {
+            font-size: 5vw;
+            letter-spacing: 1vw;
             font-weight: bold;
-            padding-top: 10px;
         }
-        
-        #userFiltrado {
-            font-size: 50px;
-            font-weight: bold;
-            padding-top: 10px;
-            margin-bottom: 20px;
+
+        header {
+            background-image: url('/img/1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        
-        .card-columns {
-            margin: 0 auto;
+
+        .p_white {
+            color: white;
+            font-size: 2.5vh;
         }
-        
-        table tr td a {
-            display: block;
-            height: 100%;
-            width: 100%;
+
+        .copyright {
+            color: white;
         }
-        
-        @media (max-width: 576px) {
-            /* de 0px até 576px */
-            .card-columns {
-                margin-left: 25%;
-                width: 300px;
-            }
-            .mensagem {
-                padding-top: 15px;
-            }
-            .user {
-                padding-top: 20px;
-            }
-        }
-        
-        @media (min-width:576px) and (max-width:767px) {
-            /* de 576px até 767px */
-            .card-columns {
-                column-count: 2;
-            }
-            .mensagem {
-                padding-top: 10px;
-            }
-        }
-        
-        @media (min-width:768px) and (max-width: 992px) {
-            /* de 768px até 992px*/
-        }
-        
-        @media (min-width:992px) and (max-width: 1200px) {
-            /* de 992px a 1200 */
-            .card-columns {
-                column-count: 4;
-            }
-        }
-        
-        @media (min-width: 1200px) {
-            /* maior que 1200 */
-            .card-columns {
-                column-count: 4;
-            }
-            .mensagem {
-                padding-top: 10px;
-            }
-            .user {
-                padding-top: 10px;
-            }
-        }
-        
-        footer {
-            box-shadow: 5px 5px 10px black;
+
+        .copyright a {
+            text-decoration: none;
+            color: #e41b40;
+            font-size: 2.5vh;
         }
     </style>
 </head>
 
 <body>
-    <header class="shadow-lg sticky-top">
-
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="/" id="nome" style="color: red;">Logo Menu Novo</a>
-
-            <button class="navbar-toggler btn" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-menu-up" viewBox="0 0 16 16">
-                        <path d="M7.646 15.854a.5.5 0 0 0 .708 0L10.207 14H14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3.793l1.853 1.854zM1 9V6h14v3H1zm14 1v2a1 1 0 0 1-1 1h-3.793a1 1 0 0 0-.707.293l-1.5 1.5-1.5-1.5A1 1 0 0 0 5.793 13H2a1 1 0 0 1-1-1v-2h14zm0-5H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2zM2 11.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0-.5.5zm0-4a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0-.5.5zm0-4a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1h-6a.5.5 0 0 0-.5.5z"/>
-                      </svg>
-
-                </span>
-            </button>
-
-            <div class="collapse navbar-collapse text-right" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link px-5" href="/usuarios/cadastrarUsuarios">Cadastrar</a>
-                    </li>
-                </ul>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md justify-content-md-center justify-content-start header">
+                    <a class="navbar-brand d-md-none d-inline" href="">Logo</a>
+                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="">Logo</a>
+                    <div class="collapse navbar-collapse justify-content-between align-items-center w-100"
+                        id="navbarNavAltMarkup">
+                        <ul class="navbar-nav mx-auto text-md-center text-left">
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Regulamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Prêmios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Ranking</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+                            <li class="nav-item"><a class="nav-link mr-2" href="">Entrar</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link sel" href="">Cadastre-se</a> </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <span class="iconify" data-icon="eva:menu-fill" style="color: white;"></span>
+                        </span>
+                    </button>
+                </nav>
+                <!-- <nav class="navbar navbar-expand-lg header">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse header" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto menu_itens">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Como Participar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Prêmios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Regulamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dúvidas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ranking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cadastre-se</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Entrar</a>
+                            </li> -->
+                <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li> -->
+                <!-- </ul> -->
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+                <!-- </div>
+                </nav> -->
             </div>
-        </nav>
-
-
+            <div class="col-md-12">
+                <div style="background: transparent; height: 70vh;"
+                    class="d-flex justify-content-center align-items-start flex-column">
+                    <h1>Em que planeta</h1>
+                    <h1>você quer viver?</h1>
+                    <button class="botao_manual">Cadastre-se</button>
+                </div>
+            </div>
+        </div>
     </header>
     <div id="topo"></div>
