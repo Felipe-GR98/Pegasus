@@ -24,13 +24,15 @@ app.use(express.json());
 app.set('view engine', 'ejs') //chamando arquivos externos
 app.set('views', __dirname + '/views') //o views deve estar igual ao nome da pasta
 
-
-//ROTAS
-const usuarios_router = require('./routers/usuarios-router')
-
-app.use('/usuarios', usuarios_router)
-
 //ROTA PRINCIPAL 
 app.get('/', (req, res) => {
     res.render("pages/index")
 })
+
+//ROTAS
+const usuarios_router = require('./routers/usuarios-router')
+app.use('/usuarios', usuarios_router)
+
+//ROTAS
+const inicial_router = require('./routers/inicial-router')
+app.use('/inicial', inicial_router)

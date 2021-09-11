@@ -6,7 +6,7 @@ const router = express.Router()
 //chamada para o controller de usuarios
 const usuariosController = require('../controllers/usuarios-controller')
 
-//chamado a função específica do controller que irá trabalhar com a rota principal 
+//chamado a função específica do controller que irá trabalhar com a rota principal (index.ejs)
 router.get('/', usuariosController.listar_usuarios)
 
 //permite que esse arquivo seja utilizada fora
