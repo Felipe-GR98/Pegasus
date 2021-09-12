@@ -15,6 +15,6 @@ router2.get('/', inicialController.paginaInicial)
 //rotas
 router2.get('/sobre', inicialController.sobre)
 router2.get('/regulamento', inicialController.regulamento)
-router2.get('/premios', inicialController.premios)
+router2.get('/duvidas', inicialController.duvidas)
 router2.get('/ranking', inicialController.ranking)
 router2.get('/cronograma', inicialController.cronograma)

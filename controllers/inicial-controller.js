@@ -15,9 +15,9 @@ exports.regulamento = (req, res) => {
     res.render('pages/inicial_regulamento')
 }
 
-//pagina premios
-exports.premios = (req, res) => {
-    res.render('pages/inicial_premios')
+//pagina cuvidas
+exports.duvidas = (req, res) => {
+    res.render('pages/inicial_duvidas')
 }
 
 //pagina ranking
