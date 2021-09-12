@@ -1,9 +1,9 @@
 .p-sobrenos {
     background: #787F83;
     position: absolute !important;
-    width: 60% !important;
+    width: 100% !important; 
     left: 30vw !important;
-    bottom: 5vh !important;
+    bottom: 1vh !important;
 }
 
 .p-sobrenos-2{
@@ -16,7 +16,7 @@
 .h1-sobrenos {
     color: white;
     font-weight: bold;
-    font-size: 10vh;
+    font-size: 8vh;
 }
 
 .p-sbrenosh1 {

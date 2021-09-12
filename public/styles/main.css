@@ -17,6 +17,12 @@ body {
 
 .premios{
     background: #F7F7F7;
+    margin-left: 17vw;
+    width: 65%;
+}
+
+.premios-img{
+    width: 28%;
 }
 
 .p-tarefas{
@@ -55,7 +61,7 @@ body {
 .h1-vermelho{
     color: #D80530;
     font-weight: bold;
-    padding-left: 25vw;
+    padding-left: 17vw;
 }
 
 #h1-banner-inicial, #h2-banner-inicial{
@@ -95,6 +101,7 @@ body {
 }
 
 .toneladas_e_jovens {
+    width: 80%;
     background: rgba(46, 46, 46, 0.55);
     text-align: center;
     padding: 3vh !important;
