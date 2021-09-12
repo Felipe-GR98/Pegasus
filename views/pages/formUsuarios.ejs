@@ -1,10 +1,11 @@
-<%- include('../partials/header'); %>
+<%- include('../partials/headerDashboard'); %>
     <main class="container py-5">
 
 
         <form action="/usuarios/cadastrarUsuarios" method="POST" name="formulario" class="needs-validation mt-5 bg-light shadow-lg p-5 rounded" novalidate>
             <h1 class="text-center pb-4">Cadastro</h1>
 
+            <h3 class="text-center pb-4">Dados do Representante</h3>
             <!-- nome e cpf-->
             <div class="form-group row">
                 <div class="col-sm-6">
@@ -43,18 +44,64 @@
 
             <!-- usuario e senha-->
             <div class="form-group row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label class="sr-only" for="nomeU">Usuário</label>
                     <input type="text" class="form-control" id="nomeU" name="nomeU" minlength="4" placeholder="nome de usuário (mínimo 4 caracteres)" required>
                     <div class="invalid-feedback">
                         Preenchimento obrigatório.
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label class="sr-only" for="senha">Senha</label>
                     <input type="text" class="form-control" id="senha" name="senha" placeholder="senha (6 caracteres)" minlength="6" maxlength="6" required>
                     <div class="invalid-feedback">
                         Preenchimento obrigatório.
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <label class="sr-only" for="senha">Confirme sua Senha</label>
+                    <input type="text" class="form-control" id="confirmaSenha" name="confirmaSenha" placeholder="Confirme sua Senha" minlength="6" maxlength="6" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center py-4">Dados da Escola</h3>
+
+            <!-- escola e código-->
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label class="sr-only" for="escola">Nome da Escola</label>
+                    <input type="text" class="form-control" id="escola" name="escola" placeholder="nome da escola" minlength="3" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label class="sr-only" for="codigo">Código da Escola</label>
+                    <input type="text" class="form-control" id="codigo" name="codigo" placeholder="código da escola" minlength="11" maxlength="11" required >
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+            </div>
+
+            <!-- escola e código-->
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label class="sr-only" for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" minlength="2" maxlength="40" required>
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label class="sr-only" for="estado">Estado</label>
+                    <input type="text" class="form-control" id="estado" name="estado" placeholder="Estado" required >
+                    <div class="invalid-feedback">
+                        Preenchimento obrigatório.
+                        <!-- COLOCAR O SELECT -->
                     </div>
                 </div>
             </div>

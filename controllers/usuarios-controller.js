@@ -44,8 +44,17 @@ exports.cadastrar_usuarios_post = (req, res) => {
     usu.telefone = req.body.telefone
     usu.nomeU = req.body.nomeU
     usu.senha = req.body.senha
-    usu.mensagem = req.body.mensagem
-    usu.cor = req.body.cor
+    usu.escola = req.body.escola
+    usu.alunos = req.body.alunos
+    usu.codigo = req.body.codigo
+    usu.cidade = req.body.cidade
+    usu.estado = req.body.estado
+    usu.envioColeta = req.body.envioColeta
+    usu.pontoColeta = req.body.pontoColeta
+    usu.envioAtividade = req.body.envioAtividade
+    usu.pontoAtividade = req.body.pontoAtividade
+    usu.pontoOnline = req.body.pontoOnline
+    usu.pontoEngajamento = req.body.pontoEngajamento
 
     usu.save(err => {
         if (err)
@@ -93,14 +102,23 @@ exports.editar_usuarios_post = (req, res) => {
         if (err)
             return res.status(500).send("Erro ao consultar usu")
 
-            usu.nome = req.body.nome
+        usu.nome = req.body.nome
         usu.cpf = req.body.cpf
         usu.email = req.body.email
         usu.telefone = req.body.telefone
         usu.nomeU = req.body.nomeU
         usu.senha = req.body.senha
-        usu.mensagem = req.body.mensagem
-        usu.cor = req.body.cor
+        usu.escola = req.body.escola
+        usu.alunos = req.body.alunos
+        usu.codigo = req.body.codigo
+        usu.cidade = req.body.cidade
+        usu.estado = req.body.estado
+        usu.envioColeta = req.body.envioColeta
+        usu.pontoColeta = req.body.pontoColeta
+        usu.envioAtividade = req.body.envioAtividade
+        usu.pontoAtividade = req.body.pontoAtividade
+        usu.pontoOnline = req.body.pontoOnline
+        usu.pontoEngajamento = req.body.pontoEngajamento
 
         usu.save(err => {
             if (err)
@@ -120,7 +138,7 @@ exports.editar_adm_get = (req, res) => {
             return res.status(500).send("Erro ao consultar usu")
 
         res.render('pages/formEditarAdm', { usu: usu })
-  
+
     })
 }
 
@@ -136,8 +154,17 @@ exports.editar_adm_post = (req, res) => {
         usu.telefone = req.body.telefone
         usu.nomeU = req.body.nomeU
         usu.senha = req.body.senha
-        usu.mensagem = req.body.mensagem
-        usu.cor = req.body.cor
+        usu.escola = req.body.escola
+        usu.alunos = req.body.alunos
+        usu.codigo = req.body.codigo
+        usu.cidade = req.body.cidade
+        usu.estado = req.body.estado
+        usu.envioColeta = req.body.envioColeta
+        usu.pontoColeta = req.body.pontoColeta
+        usu.envioAtividade = req.body.envioAtividade
+        usu.pontoAtividade = req.body.pontoAtividade
+        usu.pontoOnline = req.body.pontoOnline
+        usu.pontoEngajamento = req.body.pontoEngajamento
 
         usu.save(err => {
             if (err)
@@ -162,12 +189,3 @@ exports.filtrar_usuarios_get = (req, res) => {
 }
 
 
-//pagina termos
-exports.termos = (req, res) => {
-    res.render('pages/termos')
-}
-
-//pagina politica
-exports.politica = (req, res) => {
-    res.render('pages/politica')
-}

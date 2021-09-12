@@ -41,8 +41,3 @@ router.get('/usuariosTabela', usuariosController.listarTabela_usuarios)
 
 //mostra so um card
 router.get('/usuarioFiltrado/:id', usuariosController.filtrar_usuarios_get)
-
-
-//politica e termos
-router.get('/politica', usuariosController.politica)
-router.get('/termos', usuariosController.termos)
