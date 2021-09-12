@@ -39,45 +39,63 @@ body {
 .sel:hover {
     opacity: 0.8;
 }
+/* FOOTER CSS */
 
 @media (max-width: 768px) {
-    .nav-link:hover {
-        background: none !important;
-        color: red;
+    .linha-vertical {
+        display: none;
     }
-    .sel {
-        background: white;
-        padding: 2vh !important;
-        border-radius: 10vh;
-        color: red !important;
+    .item1 {
+        padding-left: 5vw;
     }
-    .menu_footer a:hover {
-        background: none !important;
-        color: red;
-        padding: 1vh;
+    .item2{
+        margin-left: 1vw;
     }
+    
 }
 
-.redes_sociais {
-    font-size: 7vh;
+footer {
+    background: #3E4245 !important;
+    color: white;
+    padding: 1vw;
 }
 
-.menu_footer a {
-    text-decoration: none !important;
-    color: #ffff;
-    padding: 1vh;
+.links-menu-footer, .links-base-footer {
+    color: white;
 }
 
-.menu_footer a:hover {
-    background: white;
-    border-radius: 10vh;
-    color: red;
-    padding: 1vh;
+.links-menu-footer:hover, .links-base-footer:hover {
+    color: #D80530;
+    text-decoration: none;
 }
 
-.menu_footer {
-    font-size: 2.5vh !important;
+.links-base-footer {
+    margin-left: 3.8vw;
+    font-size: 2vh;
 }
+
+.links-menu-footer {
+    margin-left: 4vw;
+}
+
+.icones-footer {
+    font-size: 3.5vh;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    color: white !important;
+}
+
+.linha-vertical {
+    height: 13vh !important;
+    margin-left: 1vw;
+}
+
+.item1, .item12{
+    margin-left: 0 !important;
+}
+
+/* FIM FOOTER CSS */
+
 
 .logo_hover:hover {
     background: transparent;
