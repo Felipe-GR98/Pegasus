@@ -192,3 +192,7 @@ body {
     background: #abadaf !important;
     font-family: 'Roboto', sans-serif !important;
 }
+
+.dropdown-toggle::after {
+    color: #D80530;
+}
