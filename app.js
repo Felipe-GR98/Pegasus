@@ -1,6 +1,7 @@
 //Chama o Express 
 const express = require('express')
 const app = express()
+app.use(express.static('public'));
 
 //Define a PORTA 
 const port = 5000

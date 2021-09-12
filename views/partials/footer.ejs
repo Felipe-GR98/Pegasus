@@ -41,108 +41,6 @@
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-
-<script>
-    function validarAdm() {
-        var passwordAdm = "123";
-        var nAdm = prompt("Digite a senha de administração do site");
-
-        console.log(passwordAdm)
-        console.log(nAdm)
-
-        if (passwordAdm === nAdm) {
-            window.location.href = "/usuarios/usuariosTabela"
-        } else {
-            alert("Senha incorreta")
-        }
-    }
-
-    //função para habilitar botão de cadastro
-    $(document).ready(function () {
-        $('#tec').change(function () {
-            var aceito = ($(this).val());
-            console.log(aceito)
-
-            if (aceito != "on") {
-                $('#botaoAceito').prop("disabled", true);
-            } else {
-                $('#botaoAceito').prop("disabled", false);
-            }
-        });
-    });
-</script>
-
-<script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
-
-
-
-<script>
-        //validação dos inputs no bootstrap
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-
-                var forms = document.getElementsByClassName('needs-validation');
-
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-
-</script>
-
-<script>
-
-    $(document).ready(function () {
-
-        $('.counter').each(function () {
-            var $this = $(this),
-                countTo = $this.attr('data-count');
-
-            $({ countNum: $this.text() }).animate({
-                countNum: countTo
-            },
-
-                {
-                    duration: 4000,
-                    easing: 'linear',
-                    step: function () {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $this.text(this.countNum);
-                    }
-                });
-        });
-
-    });
-</script>
 
 <!-- jQuery, Popper.js e Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -153,6 +51,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- JS da página -->
+    <script type="text/javascript" src="/js/inicial.js"></script>
 </body>
 
 </html>
