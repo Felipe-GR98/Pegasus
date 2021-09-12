@@ -17,5 +17,13 @@
   },
   "directories": {
     "test": "test"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipe-GR98/Pegasus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Felipe-GR98/Pegasus/issues"
+  },
+  "homepage": "https://github.com/Felipe-GR98/Pegasus#readme"
 }
