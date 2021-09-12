@@ -242,15 +242,3 @@ header {
     font-size: 2.5vh;
 }
 
-.botao-top{
-    position: fixed;
-    bottom: 7vh;
-    right: 4vw;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    border: none;
-    background-color: #D80530;
-    border-radius: 100%;
-    display: none;
-  }

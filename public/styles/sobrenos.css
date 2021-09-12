@@ -3,13 +3,13 @@
     position: absolute !important;
     width: 100% !important; 
     left: 30vw !important;
-    bottom: 1vh !important;
+    bottom: 10vh !important;
 }
 
 .p-sobrenos-2{
     background: #787F83;
     position: absolute !important;
-    top: 8vh;
+    top: 12vh;
     right: 30vw;
 }
 

@@ -18,6 +18,12 @@ router.get('/cadastrarUsuarios', usuariosController.cadastrar_usuarios_get)
 router.post('/cadastrarUsuarios', usuariosController.cadastrar_usuarios_post)
 
 
+//entrar professores
+router.get('/login', usuariosController.login_prof)
+
+//router.post('/login', usuariosController.cadastrar_usuarios_post)
+
+
 //deletar pelo ususario
 router.get('/deletarUsuarios/:id', usuariosController.deletar_usuarios)
 

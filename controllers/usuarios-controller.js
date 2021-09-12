@@ -28,6 +28,7 @@ exports.listarTabela_usuarios = (req, res) => {
 }
 
 
+
 //pagina de cadastro
 exports.cadastrar_usuarios_get = (req, res) => {
     res.render('pages/formUsuarios')
@@ -186,6 +187,11 @@ exports.filtrar_usuarios_get = (req, res) => {
         res.render('pages/usuarioFiltrado', { usu: usu })
         console.log(usu)
     })
+}
+
+//login
+exports.login_prof = (req, res) => {
+    res.render('pages/login_professores')
 }
 
 
