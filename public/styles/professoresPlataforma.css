@@ -2,13 +2,27 @@
     color: white;
 }
 
+.principal{
+    padding: 4vw !important;
+}
+
 h1 {
     color: #D80530;
     font-size: 5vh !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+}
+b{
+    color: black;
 }
 
 .navbar, .menu {
-    background-color: #3E4245 !important;
+    background-color: #7e858a !important;
+    position: fixed;
+}
+
+.titulo{
+    margin-top: 7vh;
 }
 
 .accordion-item {
@@ -119,6 +133,11 @@ label {
     transform: scale(0);
 }
 
+.imagem-rei-lixeira{
+    margin-top: 1vh !important;
+    margin-bottom: 3vh !important;
+}
+
 @keyframes s-ripple {
     0% {
         transform: scale(0);
@@ -148,6 +167,10 @@ label {
     }
 }
 
+.menu-drop{
+    margin-right: 6vw;
+}
+
 .control-checkbox input+.control_indicator::before {
     animation: s-ripple 250ms ease-out;
 }
@@ -156,6 +179,24 @@ label {
     animation-name: s-ripple-dup;
 }
 
+.botao-vamos-jogar{
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #D80530;
+    border: none;
+}
+
 body {
-    background: #919395 !important;
+    background: #abadaf !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.dropdown-toggle::after {
+    color: #D80530;
+}
+
+.footerDash{
+    background-color: #7e858a;
 }
