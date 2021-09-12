@@ -196,3 +196,7 @@ body {
 .dropdown-toggle::after {
     color: #D80530;
 }
+
+.footerDash{
+    background-color: #7e858a;
+}
