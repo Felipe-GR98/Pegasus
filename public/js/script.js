@@ -1,26 +1,9 @@
+//mascara
 $(document).ready(function () {
     $('#cpf').mask('000.000.000-00');
     $('#telefone').mask('(00) 00000-0000');
     $('#codigo').mask('00000000');
 });
-
-(function () {
-    'use strict';
-    window.addEventListener('load', function () {
-
-        var forms = document.getElementsByClassName('needs-validation');
-
-        var validation = Array.prototype.filter.call(forms, function (form) {
-            form.addEventListener('submit', function (event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
-})();
 
 
 //botao retornar ao topo
@@ -47,9 +30,3 @@ $(document).ready(function () {
 });
 
 
-var progresso = 0;
-var intervalId = window.setInterval(function () {
-    progresso = $('input[type="checkbox"]:checked').length * 6.25;
-    console.log(progresso)
-    $('#barraProgresso').width(progresso + '%')
-}, 300);

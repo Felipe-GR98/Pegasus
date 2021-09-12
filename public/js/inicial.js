@@ -1,3 +1,4 @@
+//paralax 
 $(document).ready(function () {
     var h1 = document.getElementById('h1-banner-inicial');
     var h2 = document.getElementById('h2-banner-inicial');
@@ -10,7 +11,7 @@ $(document).ready(function () {
         h2.style.top = 184+ (mov * 1) + 'px';
     })
 
-
+    //contador de impacto
     $('.counter').each(function () {
         var $this = $(this),
             countTo = $this.attr('data-count');
@@ -20,8 +21,7 @@ $(document).ready(function () {
         },
 
             {
-
-                duration: 4000,
+                duration: 6000,
                 easing: 'linear',
                 step: function () {
                     $this.text(Math.floor(this.countNum));
@@ -34,6 +34,18 @@ $(document).ready(function () {
 
 });
 
+
+//barra de progresso do prof
+var progresso = 0;
+var intervalId = window.setInterval(function () {
+    progresso = $('input[type="checkbox"]:checked').length * 6.25;
+    console.log(progresso)
+    $('#barraProgresso').width(progresso + '%')
+}, 300);
+
+
+
+//Entrar adm
 function validarAdm() {
     var passwordAdm = "123";
     var nAdm = prompt("Digite a senha de administração do site");
@@ -48,6 +60,7 @@ function validarAdm() {
     }
 }
 
+
 //função para habilitar botão de cadastro
 $(document).ready(function () {
     $('#tec').change(function () {
@@ -61,6 +74,8 @@ $(document).ready(function () {
         }
     });
 });
+
+
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
@@ -85,27 +100,4 @@ $(function () {
     })();
 
 
-$(document).ready(function () {
-
-    $('.counter').each(function () {
-        var $this = $(this),
-            countTo = $this.attr('data-count');
-
-        $({ countNum: $this.text() }).animate({
-            countNum: countTo
-        },
-
-            {
-                duration: 4000,
-                easing: 'linear',
-                step: function () {
-                    $this.text(Math.floor(this.countNum));
-                },
-                complete: function () {
-                    $this.text(this.countNum);
-                }
-            });
-    });
-
-});
 
