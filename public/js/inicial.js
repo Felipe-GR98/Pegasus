@@ -44,7 +44,6 @@ var intervalId = window.setInterval(function () {
 }, 300);
 
 
-
 //Entrar adm
 function validarAdm() {
     var passwordAdm = "123";
