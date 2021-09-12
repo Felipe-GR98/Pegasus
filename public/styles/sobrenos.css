@@ -1,0 +1,47 @@
+.p-sobrenos {
+    background: #787F83;
+    position: absolute !important;
+    width: 60% !important;
+    left: 30vw !important;
+    bottom: 5vh !important;
+}
+
+.p-sobrenos-2{
+    background: #787F83;
+    position: absolute !important;
+    top: 10vh;
+    right: 35vw;
+}
+
+.h1-sobrenos {
+    color: white;
+    font-weight: bold;
+    font-size: 10vh;
+}
+
+.p-sbrenosh1 {
+    color: white;
+    font-size: 3vh;
+    margin-top: -1vh;
+}
+
+.p-sobrenosp {
+    font-size: 2vh;
+    text-align: justify;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .h1-sobrenos {
+        font-size:5vh;
+    }
+    .p-sobrenos, .p-sobrenos-2 {
+        position: static !important;
+        width: 100% !important;
+    }
+}
+
+.o-projeto{
+    font-weight: 900;
+    color: #D80530;
+}
