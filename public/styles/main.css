@@ -1,10 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 body {
     background: #E5E5E5 !important;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* CSS DA PÁGINA INICIAL */
+
+.icones-fazer{
+    width: 40%;
+    height: 40%;
+}
+
+.p-fazer{
+    font-size: 2.5vh;
+}
+
+.premios{
+    background: #F7F7F7;
+}
+
+.p-tarefas{
+    font-weight: bold;
+}
 
 @media (max-width: 768px) {
     #h1-banner-inicial{
@@ -12,6 +29,12 @@ body {
     }
     #h2-banner-inicial{
         display: none;
+    }
+    .linha-premios{
+        display: none;
+    }
+    .h1-vermelho{
+        padding-left: 0;
     }
 }
 
@@ -27,6 +50,12 @@ body {
 
 .banner-inicial{
     width: 100%;
+}
+
+.h1-vermelho{
+    color: #D80530;
+    font-weight: bold;
+    padding-left: 25vw;
 }
 
 #h1-banner-inicial, #h2-banner-inicial{
@@ -50,14 +79,33 @@ body {
     padding-right: 0;
 }
 
+.btn-regulamento{
+    text-decoration: none;
+    color: white;
+    background: #D80530;
+    padding: 2vh;
+    border-radius: 5vh;
+}
+
+.btn-regulamento:hover{
+    text-decoration: none;
+    opacity: 0.7;
+    color: white;
+    transform: scale(1.1);
+}
+
 .toneladas_e_jovens {
-    background: rgb(211, 211, 211);
+    background: rgba(46, 46, 46, 0.55);
     text-align: center;
-    padding: 4vh !important;
+    padding: 3vh !important;
 }
 
 .header a {
     color: white;
+}
+
+.nav-link{
+    font-weight: bold;
 }
 
 .nav-link:hover {
@@ -156,8 +204,14 @@ footer {
 
 .estilo_contador {
     font-size: 5vw;
-    letter-spacing: 1vw;
-    font-weight: bold;
+    font-weight: bolder;
+    color: #D80530;
+}
+
+.h3-contador{
+    margin-top: -1vh;
+    font-size: 3vh;
+    color: white;
 }
 
 header {
