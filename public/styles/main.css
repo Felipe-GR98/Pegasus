@@ -1,12 +1,48 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 body {
     background: #E5E5E5 !important;
     font-family: 'Nunito', sans-serif;
 }
 
+/* CSS DA PÁGINA INICIAL */
+
+@media (max-width: 768px) {
+    #h1-banner-inicial{
+        width: 60%;
+    }
+    #h2-banner-inicial{
+        display: none;
+    }
+}
+
+.parallax-inicial{
+    overflow: hidden;
+    position: relative;
+}
+
+.montanha-parallax{
+    position: absolute;
+    width: 100%;
+}
+
+.banner-inicial{
+    width: 100%;
+}
+
+#h1-banner-inicial, #h2-banner-inicial{
+    position:absolute;
+    overflow: hidden;
+    left: 10vw;
+}
+
+#h2-banner-inicial{
+    top: 23vh;
+    left: 15vw;
+}
+/* FIM CSS DA PÁGINA INICIAL */
+
 .navbar, .menu-global {
-    background: #3E4245  !important;
+    background: #3E4245 !important;
 }
 
 .no-padding {
@@ -39,6 +75,7 @@ body {
 .sel:hover {
     opacity: 0.8;
 }
+
 /* FOOTER CSS */
 
 @media (max-width: 768px) {
@@ -99,7 +136,6 @@ footer {
 }
 
 /* FIM FOOTER CSS */
-
 
 .logo_hover:hover {
     background: transparent;

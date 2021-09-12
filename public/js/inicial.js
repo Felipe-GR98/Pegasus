@@ -1,4 +1,15 @@
 $(document).ready(function () {
+    var h1 = document.getElementById('h1-banner-inicial');
+    var h2 = document.getElementById('h2-banner-inicial');
+
+    window.addEventListener('scroll', function () {
+        var mov = window.scrollY;
+        console.log(mov)
+
+        h1.style.top = mov * 0.9 + 'px';
+        h2.style.top = 184+ (mov * 1) + 'px';
+    })
+
 
     $('.counter').each(function () {
         var $this = $(this),
