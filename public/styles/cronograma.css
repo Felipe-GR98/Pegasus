@@ -1,0 +1,13 @@
+.desc{
+    padding: 2vh;
+}
+
+.desc:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.h1-cronograma{
+    font-weight: bold;
+    color: #E41B40;
+}
