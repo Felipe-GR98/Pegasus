@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-9 register-right">                
                 <div class="tab-content" id="myTabContent">
-                    <form action="/usuarios/cadastrarUsuarios" method="POST" name="formulario" novalidate>
+                    <form action="/usuarios/cadastrarUsuarios" method="POST" name="formulario">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <h3 class="register-heading">Passo 1 — Dados do Representante</h3>
                             <div class="row register-form">
@@ -19,32 +19,26 @@
                                         <input type="text" class="form-control" id="nome " name="nome"
                                             placeholder="Nome Completo *" minlength="3" required value="" />
                                     </div>
-                                    <div class="invalid-feedback">
-                                        Preenchimento obrigatório.
-                                    </div>
+                                    <span class="spanRed" id="spanNome"></span>                                  
+                                    
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF *"
                                             value="" minlength="11" maxlength="11" required />
                                     </div>
-                                    <div class="invalid-feedback">
-                                        Preenchimento obrigatório.
-                                    </div>
+                                    <span class="spanRed" id="spanCPF"></span>
                                     <div class="form-group">
                                         <input type="password" class="form-control" id="senha" name="senha"
                                             placeholder="Senha(6 caracteres) *" minlength="6" maxlength="6" required
                                             value="" />
                                     </div>
-                                    <div class="invalid-feedback">
-                                        Preenchimento obrigatório.
-                                    </div>
+                                    <span class="spanRed" id="spanSenha"></span>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" id="confirmaSenha"
-                                            name="confirmaSenha" placeholder="Confirme sua Senha *" minlength="6"
-                                            maxlength="6" required value="" />
+                                        <input type="text" class="form-control"
+                                            placeholder="Nome de usuário * " id="nomeU"
+                                            name="nomeU" minlength="4" required value="" />
                                     </div>
-                                    <div class="invalid-feedback">
-                                        Preenchimento obrigatório.
-                                    </div>
+                                    <span class="spanRed" id="nomeUs"></span>
+                                    
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -58,17 +52,13 @@
                                         <input type="text" class="form-control" id="telefone" name="telefone"
                                             placeholder="Telefone *" minlength="10" required value="" />
                                     </div>
-                                    <div class="invalid-feedback">
-                                        Preenchimento obrigatório.
-                                    </div>
+                                    <span class="spanRed" id="spanTelefone"></span>
                                     <div class="form-group">
-                                        <input type="text" class="form-control"
-                                            placeholder="Nome de usuário * " id="nomeU"
-                                            name="nomeU" minlength="4" required value="" />
+                                        <input type="password" class="form-control" id="confirmaSenha"
+                                            name="confirmaSenha" placeholder="Confirme sua Senha *" minlength="6"
+                                            maxlength="6" required value="" />
                                     </div>
-                                    <div class="invalid-feedback">
-                                        Preenchimento obrigatório.
-                                    </div>
+                                    <span class="spanRed" id="spanSenhaConfirma"></span>                                    
                                 </div>
                             </div>
                         </div>
