@@ -32,11 +32,11 @@
 }
 
 #map .model-green .state .shape {
-    fill: #6cb361;
+    fill: rgba(255, 0, 0, 0.418);
 }
 
 #map .model-green .state .icon_state {
-    fill: #10592f;
+    fill: #D80530;
 }
 
 #map .model-green .state .label_icon_state {
@@ -48,7 +48,7 @@
 }
 
 #map .model-green .state:hover .shape, #map .model-green .state.hover .shape {
-    fill: #2d68b2;
+    fill: #D80530;
 }
 
 #map .model-green .state:hover .icon_state, #map .model-green .state.hover .icon_state {
@@ -105,10 +105,10 @@
 
 .descricao{
     position: absolute;
-    bottom: 30vh;
+    bottom: 50vh;
     width: 50%;
     text-align: justify;
-    right: 10vw;
+    right: 5vw;
 }
 
 @media (max-width: 768px) {
