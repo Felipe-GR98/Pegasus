@@ -1,0 +1,27 @@
+div {}
+
+.data {
+    background: #E41B40;
+    padding: 1vh;
+    border-radius: 2vw;
+    color: white;
+}
+
+.bola {
+    background: white;
+}
+
+.desc {
+    border: 1px solid #e7e7e7;
+    padding: 1vh;
+}
+
+.vertical-divisao {
+    width: 0.1vw;
+    background: grey;
+    height: 64vh;
+    position: absolute;
+    left: 37.5vw;
+    top: 10vh;
+    z-index: -1;
+}
