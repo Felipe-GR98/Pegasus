@@ -9,7 +9,8 @@
 .p-sobrenos-2{
     background: #787F83;
     position: absolute !important;
-    top: 8vh;
+    width: 60%;
+    top: 7vh;
     right: 30vw;
 }
 
