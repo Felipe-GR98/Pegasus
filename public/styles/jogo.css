@@ -1,0 +1,19 @@
+.p-jogo{
+    padding-top: 7vh;
+    font-size: 3.5vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .selos{
+        width: 80%;
+    }
+}
+.jogo{
+    width: 100%;
+}
+
+body{
+    background: #e5e5e5 !important;
+}
