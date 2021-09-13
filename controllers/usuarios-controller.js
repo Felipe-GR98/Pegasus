@@ -215,3 +215,10 @@ exports.login_submit = (req, res)=>{
 };
 
 
+exports.formEnvio = (req, res) => {
+    res.render('pages/formEnvio')
+}
+
+exports.jogo = (req, res) => {
+    res.render('pages/jogo')
+}
