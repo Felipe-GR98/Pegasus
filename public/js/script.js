@@ -37,77 +37,58 @@ $(document).ready(function () {
             $("#spanEmail").text("Insira um e-mail válido.");
 
         } else {
-            $(".spanRed").text("");
-            $(".dados").attr("data-toggle", "tab");
-            $(".emailAba").attr("data-toggle", "tab");
-            $(".emailAba").removeClass("active").attr("aria-selected", "false");
-            $(".dados").addClass("active").attr("aria-selected", "true");
-            $("#emailAba").removeClass("active");
-            $("#dados").addClass("active");
+            $("#spanEmail").text("");
+
         }
     });
 
+    $("#telefone").blur(function () {
+        var tel_val = document.querySelector("#telefone").value;
 
+        if (tel_val.length != 14) {
+            $("#spanTelefone").text("Insira um telefone válido.");
+        }
+        else {
+            $("#spanTelefone").text("");
 
+        }
+    });
 
+    $("#senha").blur(function () {
+        var senha_val = document.querySelector("#senha").value;
 
+        if (senha_val.length < 6) {
+            $("#spanSenha").text("Mínimo de 6 dígitos.");
+        }
+        else {
+            $("#spanSenha").text("");
 
+        }
+    });
 
+    $("#confirmaSenha").blur(function () {
+        var senhaConfirma_val = document.querySelector("#confirmaSenha").value;
 
+        if (senhaConfirma_val.length < 6 || senhaConfirma_val !== senha_val) {
+            $("#spanSenhaConfirma").text("Senha não confere.");
+        }
+        else {
+            $("#spanSenhaConfirm").text("");
 
+        }
+    });
 
+    $("#nomeU").blur(function () {
+        var nomeU_val = document.querySelector("#nomeU").value; 
 
+        if (nomeU_val.length < 4) {
+            $("#nomeUs").text("Mínimo de 4 dígitos.");
+        }
+        else {
+            $("#nomeUs").text("");
 
-
-
-    // $("#nomeU").blur(function () {
-    //     var nome_val = document.querySelector("#nome").value; 
-    //     var email_val = document.querySelector("#email").value;      
-    //     var cpf_val = document.querySelector("#cpf").value;
-    //     var tel_val = document.querySelector("#telefone").value;
-    //     var senha_val = document.querySelector("#senha").value;
-    //     var senhaConfirma_val = document.querySelector("#confirmaSenha").value;
-    //     var nome_val = document.querySelector("#nomeU").value;       
-
-    //     //validação e-mail        
-    //     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    //     if (reg.test(email_val) == false) {
-    //         $("#spanEmail").text("Insira um e-mail válido.");            
-
-    //     } else {
-    //         $(".spanRed").text("");
-    //         $(".dados").attr("data-toggle", "tab");
-    //         $(".emailAba").attr("data-toggle", "tab");
-    //         $(".emailAba").removeClass("active").attr("aria-selected", "false");
-    //         $(".dados").addClass("active").attr("aria-selected", "true");
-    //         $("#emailAba").removeClass("active");
-    //         $("#dados").addClass("active");            
-    //     }       
-
-    //     if (!isNaN(nome_val)) {
-    //         $("#spanNome").text("Insira um nome válido.");
-    //     }
-    //     if (!isNaN(sobrenome_val)) {
-    //         $("#spanSobrenome").text("Insira um sobrenome válido.");
-    //     }
-    //     if (cpf_val.length != 14) {
-    //         $("#spanCPF").text("Insira um cpf válido.");
-    //     }
-    //     if (tel_val.length != 15) {
-    //         $("#spanTelefone").text("Insira um telefone válido.");
-    //     }
-    //     if (senha_val.length < 6) {
-    //         $("#spanSenha").text("Mínimo de 6 dígitos.");
-    //     }
-    //     if (senhaConfirma_val.length < 6 || senhaConfirma_val !== senha_val) {
-    //         $("#spanSenhaConfirma").text("Senha não confere.");
-    //     }
-    //     else {  
-    //         $('#botaoAceito').prop("disabled", false);
-    //         return true;
-    //     }
-    // });
-
+        }
+    });
 
     //função para habilitar botão de cadastro
     $('#tec').change(function () {
@@ -119,7 +100,6 @@ $(document).ready(function () {
             $('#botaoAceito').prop("disabled", false);
         }
     });
-
 
     $("#codigo").blur(function () {
         var escola1 = 12424119;
@@ -153,8 +133,20 @@ $(document).ready(function () {
                 break
 
             case "24452679":
-                $("#escola").attr("placeholder", "E.E. Floral Amaral");
+                $("#escola").attr("placeholder", "E.E. Flora Amaral");
                 break
+        }
+    });
+
+    $("#codigo").blur(function () {
+        var codigo_val = document.querySelector("#codigo").value;
+
+        if (codigo_val.length < 6) {
+            $("#spanCodigo").text("Mínimo de 8 dígitos.");
+        }
+        else {
+            $("#spanCodigo").text("");
+
         }
     });
 
