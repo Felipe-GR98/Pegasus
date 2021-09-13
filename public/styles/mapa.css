@@ -1,3 +1,7 @@
+.mapa-main{
+    min-height: 110vh;
+}
+
 #map {
     display: none;
 }
