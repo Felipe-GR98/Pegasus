@@ -78,24 +78,23 @@ Outra forma de pontuação será através de software para monitoramento de rede
 
 Banco de Dados
 O banco de dados foi criado em modelo não relacional, com a tecnologia do MongoDB. Os campos do banco são:
-    nome: String, nome do representante da escola
-    cpf: String, cpf do representante da escola
-    email: String, e-mail do representante da escola
-    telefone: String, telephone do representante da escola
-    nomeU: String, nome de usuário escolhido pelo representante da escola
-    senha: String, senha escolhida pelo representante da escola
-    escola: String, nome da escola
-    alunos: String, quantidade de alunos na escola
-    codigo: String, código da escola
-    cidade: String, cidade da escola
-    estado: String, estado da escola
-    envioColeta: String, campo para salvar o envio de certificado de coleta
-    pontoColeta: String, campo para salvar os pontos recebidos por certificado de coleta
-    envioAtividade: String, campo para salvar o envio de fotos e vídeos das atividades
-    pontoAtividade: String, campo para salvar os pontos recebidos por atividades desenvolvidas
-    pontoOnline: String, campo para salvar os pontos recebidos pelas atividades online
-    pontoEngajamento: String, campo para salvar os pontos recebidos por engajamento em redes sociais
-
+- nome: String, nome do representante da escola
+- cpf: String, cpf do representante da escola
+- email: String, e-mail do representante da escola
+- telefone: String, telephone do representante da escola
+- nomeU: String, nome de usuário escolhido pelo representante da escola
+- senha: String, senha escolhida pelo representante da escola
+- escola: String, nome da escola
+- alunos: String, quantidade de alunos na escola
+- codigo: String, código da escola
+- cidade: String, cidade da escola
+- estado: String, estado da escola
+- envioColeta: String, campo para salvar o envio de certificado de coleta
+- pontoColeta: String, campo para salvar os pontos recebidos por certificado de coleta
+- envioAtividade: String, campo para salvar o envio de fotos e vídeos das atividades
+- pontoAtividade: String, campo para salvar os pontos recebidos por atividades desenvolvidas
+- pontoOnline: String, campo para salvar os pontos recebidos pelas atividades online
+- pontoEngajamento: String, campo para salvar os pontos recebidos por engajamento em redes sociais
 
 
 Equipe:
