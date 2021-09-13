@@ -61,7 +61,7 @@ exports.cadastrar_usuarios_post = (req, res) => {
         if (err)
             return res.status(500).send("Erro ao cadastrar Usuário")
 
-        return res.redirect('/inicial')
+        return res.redirect('/usuarios/login')
     })
 
 }
