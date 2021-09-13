@@ -202,8 +202,8 @@ body {
 }
 
 .containerEnvio{
-    height: 80vh;
-    padding-top: 20vh;
+    height: 100vh;
+    padding-top: 30vh;
 }
 
 .form-envio{
@@ -219,7 +219,7 @@ body {
     color: white;
 }
 
-label, b{
+.labelEnvio, .bEnvio{
     font-weight: bold;
     color: white;
 }

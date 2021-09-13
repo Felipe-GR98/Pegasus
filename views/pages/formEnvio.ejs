@@ -1,31 +1,23 @@
 <%- include('../partials/headerDashboard'); %>
     <main class="containerEnvio container-fluid">
         <div class="col-md-6 form-envio">
-            
-            <label for="formFileMultiple" class="form-label">Comprovação:</label>
-            <div class="input-group mb-3">
 
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Upload</span>
-                </div>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01">
-                    <label class="custom-file-label" for="inputGroupFile01">Clique aqui pra escolher o arquivo</label>
-                </div>
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label labelEnvio">Comprovação:</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
             </div>
 
-
             <div>
-                <b>Tipo do(s) arquivo(s):</b>
+                <b class="bEnvio">Tipo do(s) arquivo(s):</b>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Imagem</label>
+                    <label class="form-check-label labelEnvio" for="inlineCheckbox1">Imagem</label>
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Vídeo</label>
+                    <label class="form-check-label labelEnvio" for="inlineCheckbox2">Vídeo</label>
                 </div><br>
-                <label for="atividade" class="pt-3">Atividade realizada:</label>
+                <label for="atividade" class="pt-3 labelEnvio">Atividade realizada:</label>
                 <select id="atividade" class="form-select" aria-label="Default select example">
                     <option selected disabled>Selecione a atividade realizada</option>
                     <option value="1">Certificado de coleta</option>
@@ -33,7 +25,33 @@
                 </select>
             </div>
 
-            <button class="botao-vamos-jogar">Vamos jogar?</button>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="botao-vamos-jogar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Enviar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tudo certo!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Seu documento foi enviado e você receberá seus pontos em até 2 dias úteis
+                        </div>
+                        <div class="modal-footer">
+                            <a href="/usuarios/"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Voltar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="/usuarios/"><button class="botao-vamos-jogar m-5">Voltar</button></a>
         </div>
     </main>
 
