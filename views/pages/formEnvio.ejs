@@ -2,18 +2,10 @@
     <main class="containerEnvio container-fluid">
         <div class="col-md-6 form-envio">
             
-            <label for="formFileMultiple" class="form-label">Comprovação:</label>
-            <div class="input-group mb-3">
-
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Upload</span>
-                </div>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01">
-                    <label class="custom-file-label" for="inputGroupFile01">Clique aqui pra escolher o arquivo</label>
-                </div>
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Comprovação:</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
             </div>
-
 
             <div>
                 <b>Tipo do(s) arquivo(s):</b>
@@ -33,7 +25,7 @@
                 </select>
             </div>
 
-            <button class="botao-vamos-jogar">Vamos jogar?</button>
+            <a href="/usuarios/" ><button class="botao-vamos-jogar mt-5">Enviar</button></a>
         </div>
     </main>
 
