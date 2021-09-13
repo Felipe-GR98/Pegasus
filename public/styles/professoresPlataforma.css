@@ -219,7 +219,7 @@ body {
     color: white;
 }
 
-label, b{
+.labelEnvio, .bEnvio{
     font-weight: bold;
     color: white;
 }
