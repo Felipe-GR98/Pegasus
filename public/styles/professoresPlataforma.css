@@ -26,7 +26,7 @@ b{
 }
 
 .acordeao{
-    z-index: -1 !important;
+    z-index: 1 !important;
 }
 
 .accordion-item {
@@ -62,7 +62,6 @@ label {
 
 .control input {
     position: absolute;
-    z-index: -1;
     opacity: 0;
 }
 
