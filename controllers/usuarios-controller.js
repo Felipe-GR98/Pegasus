@@ -61,7 +61,7 @@ exports.cadastrar_usuarios_post = (req, res) => {
         if (err)
             return res.status(500).send("Erro ao cadastrar Usuário")
 
-        return res.redirect('/usuarios')
+        return res.redirect('/inicial')
     })
 
 }
@@ -125,7 +125,7 @@ exports.editar_usuarios_post = (req, res) => {
             if (err)
                 return res.status(500).send("Erro ao cadastrar Usuário")
 
-            return res.redirect('/usuarios/')
+            return res.redirect('/usuarios')
         })
 
     })
@@ -193,5 +193,25 @@ exports.filtrar_usuarios_get = (req, res) => {
 exports.login_prof = (req, res) => {
     res.render('pages/login_professores')
 }
+
+exports.login_submit = (req, res)=>{
+    let user_type = req.query.nomeU;
+    let pass_type = req.query.senha;
+    console.log(user_type, pass_type)
+    Usuarios.find({$and: [{nomeU: user_type}, {senha: pass_type}]}, (err, usuarios)=>{
+    // Usuario.find({username: user_type}, (err, usuario)=>{
+            if(err){
+                return res.status(500).send("Erro ao comunicar com o Banco");
+            }
+            else{
+                
+                if(usuario.length == 0){
+                    return res.render("login", {usuarios: usuarios});
+                }
+                console.log('Login successfuly')
+                res.redirect("/usuarios");
+            };
+        });
+};
 
 

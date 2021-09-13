@@ -86,18 +86,17 @@ $(document).ready(function () {
 
 
 //função para habilitar botão de cadastro
-// $(document).ready(function () {
-//     $('#tec').change(function () {
-//         var aceito = ($(this).val());
-//         console.log(aceito)
-//         if (aceito != "on") {
-//             $('#botaoAceito').prop("disabled", true);
-//         } else {
-//             $('#botaoAceito').prop("disabled", false);
-//         }
-//     });
-// });
-
+$(document).ready(function () {
+    $('#tec').change(function () {
+        var aceito = ($(this).val());
+        console.log(aceito)
+        if (aceito != "on") {
+            $('#botaoAceito').prop("disabled", true);
+        } else {
+            $('#botaoAceito').prop("disabled", false);
+         }
+     });
+});// 
 
 
 //Entrar adm

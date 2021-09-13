@@ -21,6 +21,8 @@ router.post('/cadastrarUsuarios', usuariosController.cadastrar_usuarios_post)
 //entrar professores
 router.get('/login', usuariosController.login_prof)
 
+router.get('/login_submit', usuariosController.login_submit)
+
 //router.post('/login', usuariosController.cadastrar_usuarios_post)
 
 
