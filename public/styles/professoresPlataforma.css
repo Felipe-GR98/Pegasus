@@ -25,6 +25,10 @@ b{
     margin-top: 7vh;
 }
 
+.acordeao{
+    z-index: -1 !important;
+}
+
 .accordion-item {
     border: none !important;
     background: transparent !important;
