@@ -1,7 +1,7 @@
 <%- include('../partials/headerDashboard'); %>
     <main class="containerEnvio container-fluid">
         <div class="col-md-6 form-envio">
-            
+
             <div class="mb-3">
                 <label for="formFileMultiple" class="form-label labelEnvio">Comprovação:</label>
                 <input class="form-control" type="file" id="formFileMultiple" multiple>
@@ -25,7 +25,33 @@
                 </select>
             </div>
 
-            <a href="/usuarios/" ><button class="botao-vamos-jogar mt-5">Enviar</button></a>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="botao-vamos-jogar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Enviar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tudo certo!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Seu documento foi enviado e você receberá seus pontos em até 2 dias úteis
+                        </div>
+                        <div class="modal-footer">
+                            <a href="/usuarios/"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Voltar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="/usuarios/"><button class="botao-vamos-jogar m-5">Voltar</button></a>
         </div>
     </main>
 
