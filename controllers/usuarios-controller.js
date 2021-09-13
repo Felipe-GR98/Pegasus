@@ -195,3 +195,10 @@ exports.login_prof = (req, res) => {
 }
 
 
+exports.formEnvio = (req, res) => {
+    res.render('pages/formEnvio')
+}
+
+exports.jogo = (req, res) => {
+    res.render('pages/jogo')
+}

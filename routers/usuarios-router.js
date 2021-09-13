@@ -47,3 +47,8 @@ router.get('/usuariosTabela', usuariosController.listarTabela_usuarios)
 
 //mostra so um card
 router.get('/usuarioFiltrado/:id', usuariosController.filtrar_usuarios_get)
+
+//cadastrar certificado
+router.get('/formEnvio', usuariosController.formEnvio)
+
+router.get('/jogo', usuariosController.jogo)
