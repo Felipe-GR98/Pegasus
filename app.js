@@ -37,3 +37,4 @@ app.use('/usuarios', usuarios_router)
 //ROTAS
 const inicial_router = require('./routers/inicial-router')
 app.use('/inicial', inicial_router)
+
