@@ -251,29 +251,3 @@ header {
     font-weight: bold !important;
 }
 
-.containerEnvio{
-    height: 80vh;
-    padding-top: 20vh;
-}
-
-.form-envio{
-    border: 0.5vh solid #D80530;
-    padding: 5vh;
-    margin: 0 auto;
-    background: #3E4245;
-    border-radius: 1vh;
-}
-
-#formFileMultiple{
-    background: transparent;
-    color: white;
-}
-
-label, b{
-    font-weight: bold;
-    color: white;
-}
-
-.form-check-label{
-    font-weight: normal !important;
-}
